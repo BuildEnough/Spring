@@ -210,3 +210,13 @@ public class HelloController {
 
 > 참고: spring-boot-devtools 라이브러리를 추가하면, html 파일을 컴파일만 해주면 서버 재시작 없이 View 파일 변경이 가능하다.
 > 인텔리J 컴파일 방법: 메뉴 build
+
+<br>
+
+## 빌드하고 실행
+1. `./gradlew build`
+   - 잘 안될 경우: `./gradlew clean` or `./gradlew clean build` 해주면 build 파일 없어짐
+2. `cd build/libs`
+3. `ls -arlth`
+4. `java -jar hello-spring-0.0.1-SNAPSHOT.jar`
+5. `실행확인`
