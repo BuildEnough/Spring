@@ -43,14 +43,14 @@ https://start.spring.io/
 
 ### 프로젝트 선택
 - Project Gradle Project
-  - SPring Boot: 2.3.x
+  - Spring Boot: 정식 버전 중 가장 최신(3.0.x)
   - Language: Java
   - Packaging: Jar
   - Java: 11
 - Project Metadata
   - groupId: hello
   - artifactId: hello-spring
-- DependenciesL Spring Web, Thymeleaf
+- Dependencies(어떤 라이브러리를 가져올 것인지): Spring Web, Thymeleaf
 
 <br>
 
@@ -92,7 +92,7 @@ tasks.named('test') {
 <br>
 
 ### 실행속도 향상
-- IntelliJ 사용 중이라면,
+- IntelliJ 사용 중이라면, IntelliJ Gradle 대신에 자바 직접 실행
 - Settings -> Appearance -> Gradle 검색 -> Build and run using, Run tests using를 Gradle에서 IntelliJ IDEA로 바꿔줌
 ![](images/settings.png)
 - Gradle을 통해 run 실행하는 것보다 IntelliJ를 통해 run을 실행하는 것이 속도가 더 빠를 때가 있기 때문에 설정해줌
@@ -130,3 +130,83 @@ tasks.named('test') {
 
 ## View 환경설정
 ### Welcome page 만들기
+- main -> java -> resources -> static에 index.html 만들어줌
+```html
+<!-- resources/static/index.html -->
+  <!DOCTYPE HTML>
+  <html>
+  <head>
+      <title>Hello</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+  Hello
+  <a href="/hello">hello</a>
+  </body>
+  </html>
+```
+- 스프링 부트가 제공하는 Welcome Page 기능
+  - static/index.html 을 올려두면 Welcome page 기능을 제공한다.
+  - [스프링 부트가 제공하는 Welcome Page 기능](https:docsspringiospring-bootdocs231RELEASEreferencehtmlspring-boot-featureshtml#boot-features-spring-mvc-welcome-page)
+
+<br>
+
+- thymeleaf 템플릿 엔진
+  - [thymeleaf 공식 사이트](https://www.thymeleaf.org/)
+  - [스프링 공식 튜토리얼](https://spring.io/guides/gs/serving-web-content/)
+  - [스프링부트 메뉴얼](https://docs.spring.io/spring-boot/docs/2.3.1.RELEASE/reference/html/spring-boot-features.html#boot-features-spring-mvc-template-engines)
+
+<br>
+
+---
+## Controller 만들기
+- main -> java -> hello.hellospring에서 controller 패키지 만들어줌
+- 만든 controller 패키지 안에 HelloController 클래스 만들어줌
+```
+package hello.hellospring.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class HelloController {
+    @GetMapping("hello")
+    public String hello(Model model){
+        model.addAttribute("data", "hello!!");
+        return "hello";
+    }
+}
+
+```
+<br>
+
+- main -> java -> resources -> templates에서 hello.html 만들어줌
+```html
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p th:text="'안녕하세요. ' + ${data}" >안녕하세요. 손님</p>
+</body>
+</html>
+```
+
+<br>
+
+- thymeleaf 템플릿엔진 동작 확인
+- `http://localhost:8080/hello`
+
+<br>
+
+- 동작 환경 그림
+![동작 환경 그림](images/스프링_동작.png)
+- 컨트롤러에서 리턴 값으로 문자를 반환하면 뷰 리졸버( viewResolver )가 화면을 찾아서 처리한다.
+  - 스프링 부트 템플릿엔진 기본 viewName 매핑
+  - resources:templates/ +{ViewName}+ .html
+
+> 참고: spring-boot-devtools 라이브러리를 추가하면, html 파일을 컴파일만 해주면 서버 재시작 없이 View 파일 변경이 가능하다.
+> 인텔리J 컴파일 방법: 메뉴 build
