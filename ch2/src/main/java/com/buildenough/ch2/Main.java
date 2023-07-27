@@ -1,4 +1,4 @@
-package com.fastcampus.ch2;
+package com.buildenough.ch2;
 
 public class Main {
     public static void main(String[] args) {

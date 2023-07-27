@@ -1,4 +1,4 @@
-package com.fastcampus.ch2;
+package com.buildenough.ch2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

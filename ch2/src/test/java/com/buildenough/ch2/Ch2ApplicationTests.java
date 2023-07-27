@@ -1,4 +1,4 @@
-package com.fastcampus.ch2;
+package com.buildenough.ch2;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
