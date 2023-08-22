@@ -6,7 +6,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.net.URLEncoder;
 
@@ -20,14 +22,20 @@ public class LoginController {
     }
 
     @PostMapping("/login")
-    public String login(String id, String pwd, Model model) throws IOException {
+    public String login(HttpServletRequest req, String id, String pwd, RedirectAttributes model) throws IOException {
         if (loginCheck(id, pwd)) {
             model.addAttribute("id", id);
             model.addAttribute("pwd", pwd);
             return "userInfo";
         } else {
-            String msg = URLEncoder.encode("id 또는 pwd가 일치하지 않습니다.", "utf-8");
-            return "redirect:/login/login?msg="+msg;
+//            String msg = URLEncoder.encode("id 또는 pwd가 일치하지 않습니다.", "utf-8");
+            String msg = "id 또는 pwd가 일치하지 않습니다.";
+            model.addAttribute("msg", msg);
+            model.addFlashAttribute("msg", "일회용 메시지");
+            req.setAttribute("msg", "request에 저장된 msg");
+
+            return "forward:/";
+//            return "redirect:/login/login?msg="+msg;
         }
     }
 

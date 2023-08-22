@@ -1,4 +1,4 @@
-package com.example.ch1;
+package com.practice.ch1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,7 +13,7 @@ public class Ch1Application {
 		SpringApplication.run(Ch1Application.class, args);
 	}
 
-	@GetMapping("/")
+	@GetMapping
 	public String hello() {
 		return "Hello, Spring Boot";
 	}
