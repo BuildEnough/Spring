@@ -1,6 +1,7 @@
 package com.example.firstproject.entity;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
@@ -14,6 +15,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @ToString
 @Entity
+@Getter
 public class Article {
     @Id
     @GeneratedValue
