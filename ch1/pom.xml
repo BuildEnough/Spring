@@ -5,10 +5,10 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.14</version>
+		<version>2.7.16</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.practice</groupId>
+	<groupId>com.buildenough</groupId>
 	<artifactId>ch1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ch1</name>
