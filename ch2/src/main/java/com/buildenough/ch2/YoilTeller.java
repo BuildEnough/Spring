@@ -1,39 +1,30 @@
 package com.buildenough.ch2;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 import java.io.IOException;
 import java.util.Calendar;
 
 @Controller
 public class YoilTeller {
-    @RequestMapping("/yoil")
-    public ModelAndView main(int year, int month, int day) throws IOException {
-        ModelAndView mv = new ModelAndView();
-        mv.setViewName("yoilError");
+    @RequestMapping("/getYoil")
+    public String main(@ModelAttribute MyDate myDate, Model model) throws IOException {
 
-        if(!isValid(year, month, day)) {
-            return mv;
-        }
+        char yoil = getYoil(myDate);
 
+        return "yoil";
+    }
+
+    @ModelAttribute("yoil")
+    private char getYoil(MyDate mydate) {
         Calendar cal = Calendar.getInstance();
         cal.clear();
-        cal.set(year, month-1, day);
+        cal.set(mydate.getYear(), mydate.getMonth()-1, mydate.getDay());
 
         int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
         char yoil = "일월화수목금토".charAt(dayOfWeek - 1);
-
-        mv.addObject("year", year);
-        mv.addObject("month", month);
-        mv.addObject("day", day);
-        mv.addObject("yoil", yoil);
-        mv.setViewName("yoil");
-
-        return mv;
-    }
-
-    private boolean isValid(int year, int month, int day) {
-        return true;
+        return yoil;
     }
 }
