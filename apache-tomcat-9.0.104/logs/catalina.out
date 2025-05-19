@@ -1,0 +1,51 @@
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+03-May-2025 09:41:06.954 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.104
+03-May-2025 09:41:06.957 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Apr 4 2025 12:32:55 UTC
+03-May-2025 09:41:06.958 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.104.0
+03-May-2025 09:41:06.958 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+03-May-2025 09:41:06.958 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     15.4.1
+03-May-2025 09:41:06.958 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          aarch64
+03-May-2025 09:41:06.958 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+03-May-2025 09:41:06.958 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          17.0.14+7
+03-May-2025 09:41:06.958 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Eclipse Adoptium
+03-May-2025 09:41:06.958 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/kbw/Desktop/Spring/apache-tomcat-9.0.104
+03-May-2025 09:41:06.958 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/kbw/Desktop/Spring/apache-tomcat-9.0.104
+03-May-2025 09:41:06.972 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+03-May-2025 09:41:06.972 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+03-May-2025 09:41:06.972 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+03-May-2025 09:41:06.972 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+03-May-2025 09:41:06.972 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+03-May-2025 09:41:06.972 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+03-May-2025 09:41:06.972 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+03-May-2025 09:41:06.972 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/kbw/Desktop/Spring/apache-tomcat-9.0.104/conf/logging.properties
+03-May-2025 09:41:06.972 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+03-May-2025 09:41:06.972 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+03-May-2025 09:41:06.972 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+03-May-2025 09:41:06.972 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dsun.io.useCanonCaches=false
+03-May-2025 09:41:06.972 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+03-May-2025 09:41:06.972 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+03-May-2025 09:41:06.972 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/kbw/Desktop/Spring/apache-tomcat-9.0.104
+03-May-2025 09:41:06.972 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/kbw/Desktop/Spring/apache-tomcat-9.0.104
+03-May-2025 09:41:06.972 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/kbw/Desktop/Spring/apache-tomcat-9.0.104/temp
+03-May-2025 09:41:06.978 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/kbw/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+03-May-2025 09:41:07.112 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+03-May-2025 09:41:07.132 정보 [main] org.apache.catalina.startup.Catalina.load [280] 밀리초 내에 서버가 초기화되었습니다.
+03-May-2025 09:41:07.150 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+03-May-2025 09:41:07.150 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.104]
+03-May-2025 09:41:07.153 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/kbw/Desktop/Spring/apache-tomcat-9.0.104/webapps/docs]을(를) 배치합니다.
+03-May-2025 09:41:07.275 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/kbw/Desktop/Spring/apache-tomcat-9.0.104/webapps/docs]에 대한 배치가 [121] 밀리초에 완료되었습니다.
+03-May-2025 09:41:07.275 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/kbw/Desktop/Spring/apache-tomcat-9.0.104/webapps/manager]을(를) 배치합니다.
+03-May-2025 09:41:07.290 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/kbw/Desktop/Spring/apache-tomcat-9.0.104/webapps/manager]에 대한 배치가 [14] 밀리초에 완료되었습니다.
+03-May-2025 09:41:07.290 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/kbw/Desktop/Spring/apache-tomcat-9.0.104/webapps/examples]을(를) 배치합니다.
+03-May-2025 09:41:07.380 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/kbw/Desktop/Spring/apache-tomcat-9.0.104/webapps/examples]에 대한 배치가 [90] 밀리초에 완료되었습니다.
+03-May-2025 09:41:07.380 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/kbw/Desktop/Spring/apache-tomcat-9.0.104/webapps/ROOT]을(를) 배치합니다.
+03-May-2025 09:41:07.386 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/kbw/Desktop/Spring/apache-tomcat-9.0.104/webapps/ROOT]에 대한 배치가 [6] 밀리초에 완료되었습니다.
+03-May-2025 09:41:07.386 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/kbw/Desktop/Spring/apache-tomcat-9.0.104/webapps/host-manager]을(를) 배치합니다.
+03-May-2025 09:41:07.394 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/kbw/Desktop/Spring/apache-tomcat-9.0.104/webapps/host-manager]에 대한 배치가 [8] 밀리초에 완료되었습니다.
+03-May-2025 09:41:07.396 정보 [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+03-May-2025 09:41:07.402 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [270] 밀리초 내에 시작되었습니다.
+03-May-2025 09:41:27.067 정보 [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+03-May-2025 09:41:27.067 정보 [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+03-May-2025 09:41:27.069 정보 [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+03-May-2025 09:41:27.079 정보 [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+03-May-2025 09:41:27.082 정보 [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
